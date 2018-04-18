@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="Num1" />
+        <input type="text" id="Num2" />
+        <input type="button" value="Sumar" onclick="alert(suma(10, 20));" />
+    </form>
+    <script >
+        var suma = function suma(Num1, Num2) {
+            var Numero1 = parseFloat(document.getElementById("Num1").Value);
+            var Numero2 = parseFloat(document.getElementById("Num2").Value);
+            var result = Numero1 + Numero2;
+            return result;
+        }     
+
+    </script>
+</body>
+</html>
