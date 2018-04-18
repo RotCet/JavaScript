@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+       //scope
+        /// Global- Podemos acceder a ella desde cualquier parte del codigo
+        /// Local - Variables creadas debtri de una función, solo pueden ser accedidas desde su finción o una funcion anidada
+        var variable= "Global variable";
+        alert(variable);
+        var miFuncion = function () {
+            var variableLocal = "Variable Local";//si le quitas la palabra var se conviente en variable global
+           // alert(variable="Nuevo dato");
+            alert(variableLocal);
+            //funciones anidadas
+            var funcionLocan = function () {
+                var variableLocal=
+            }
+        }
+        miFuncion();
+        alert(variable);
+
+    </script>
+</body>
+</html>
