@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <ol id="lista">
+        <li>Nodos a la DOM</li>
+        <li>Nodos y más nodos</li>
+    </ol>
+    <script>
+        var elemento = document.createElement("li"),
+            contenido = document.createTextNode("Nuevo Texto");
+        elemento.appendChild(contenido);
+
+       // var padre = document.appendChild("lista");
+       // padre.appendChild(elemento)
+        //document.body.appendChild(elemento);
+
+        //estos son lo mismo para extraer el elemnto padre
+        var padre = document.getElementsByTagName("li")[0].parentNode;
+        padre = document.getElementById("lista");
+
+        //imprime
+        padre.appendChild(elemento);
+
+        //este codigo tambien hace lo mismo
+        var primerElemento = document.getElementsByTagName("li")[0];
+        padre.insertBefore(elemento, primerElemento)
+        
+
+    </script>
+</body>
+</html>

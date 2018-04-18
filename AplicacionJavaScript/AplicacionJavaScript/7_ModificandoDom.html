@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <ol id="lista">
+        <li id="primero">Nodos a la DOM</li>
+        <li>Nodos y más nodos</li>
+    </ol>
+    <script>
+            var elemento = document.createElement("li"),
+            contenido = document.createTextNode("Nuevo Dato rouse");
+            elemento.appendChild(contenido);
+
+      //  var primerElemento = document.getElementById("primero");
+       // primerElemento.innerHTML = "Nuevo Nodo <i class=\"foo\">Si quedo</i>"; // con TextConten no ejecuta el codigo html pero es mas seguro
+
+        //reemplaza
+        //var primerElemento = document.getElementsByTagName("li")[0].parentNode,
+        //    referencia = document.getElementsByTagName("li")[0];
+        //primerElemento.replaceChild(elemento, referencia);
+
+        //reemplaza
+        var primerElemento = document.getElementsByTagName("li")[0].parentNode,
+            referencia = document.getElementsByTagName("li")[0];
+        primerElemento.removeChild(referencia);
+
+    </script>
+</body>
+</html>

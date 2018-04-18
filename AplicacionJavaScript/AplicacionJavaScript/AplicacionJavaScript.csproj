@@ -76,6 +76,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="4_DOM.html" />
+    <Content Include="6_NodosDOM.html" />
+    <Content Include="7_ModificandoDom.html" />
     <Content Include="Global.asax" />
     <Content Include="3_metodos-cadenas.html" />
     <Content Include="5_Nodos.html" />
