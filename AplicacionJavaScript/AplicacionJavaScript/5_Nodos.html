@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1 id="titulo">Titulo de nuestro sitio WEB</h1>
+    <div id="subtitulo"></div>
+    <p>1.- Lorem</p>
+    <p id="segundo">2. segunda línea</p>
+    <p>3. Línea</p>
+    <!--al final de código para acceder a elementos-->
+    <script>
+        var elementosP = document.getElementsByTagName("p");
+        var elementosP2 = document.getElementById("segundo");
+        //1. Crear el elemento
+        var elemnto = document.createElement("h2");
+        //2. Crear un nodo de texto
+        var contenido = document.createTextNode("Este es nuestro titular");
+        //3. Añadir el nodo del texto al elemento
+        elemnto.appendChild(contenido);
+        //4. Agregar el elemento al documento
+        elemnto.setAttribute("align", "center");
+        //5. Agregar el elemnto al documento
+        document.getElementById("subtitulo").appendChild(elemnto);
+    </script>
+</body>
+</html>

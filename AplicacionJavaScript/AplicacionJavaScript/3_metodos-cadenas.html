@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var texto = "CadenaA";
+        var NuevoTexto = texto.length;
+        //cortar caracteres
+         NuevoTexto = texto.substring(3);//imprime apartir de la pos 3
+         NuevoTexto = texto.substr(0,3);// indica de que seccion tomar
+        //indicar en que porsición se encuentra el caracter solicitado
+        NuevoTexto = texto.indexOf("a", 2);// e indica a partir de que posición inicia
+        //encontrar un valor apartir de una posición que encuentre el valor
+        NuevoTexto = texto.indexOf("a", texto.indexOf("a"));
+        //buscar de atras para adelante
+        NuevoTexto = texto.lastIndexOf("a");
+        //reemplazar datos
+        NuevoTexto = texto.replace(texto, "Hola Mundo");
+        NuevoTexto = texto.replace("na", "Hola Mundo");
+
+        // concertir mayu-min
+
+        NuevoTexto = texto.toLocaleUpperCase();
+        NuevoTexto = texto.toLocaleLowerCase();
+
+        document.write(NuevoTexto)
+    </script>
+</body>
+</html>
