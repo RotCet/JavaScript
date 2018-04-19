@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+   <style>
+       div {
+           width:200px;
+           height:200px;
+           background:#dddddd;
+           display:inline-block;
+           margin-right:10px;
+           border:1px solid #AAAAAA;
+       }
+       .azul {
+           background:#0074D9;
+           border: 1px solid #000;
+       }
+       .rojo {
+           background: #FF4136;
+           border: 1px solid #000;
+       }
+   </style>
+</head>
+<body>
+    <section id="contenedor">
+        <a href="https://www.youtube.com/watch?v=jVYq32sqoXo&t=1s" id="enlace">Enlace</a>
+        <div class=""></div>
+        <div class=""></div>
+    </section>
+    <script>
+        var elemento = document.createElement("div");
+        var padre = document.getElementById("contenedor")
+        var referenceElement = document.getElementsByTagName("div")[0];
+        elemento.setAttribute("class", "azul");
+        padre.insertBefore(elemento, referenceElement)
+
+        var enla = document.getElementById("enlace");
+        enla.setAttribute("href", "https://www.google.com.mx");
+       
+        
+        ///**Modficias los atributos & Id
+        elemento.setAttribute("class", "rojo");
+        elemento.setAttribute("id", "nuevaID");
+        padre.insertBefore(elemento, referenceElement)
+        //**acceder directamente a los elementos y modificarlo
+        elemento.id("tercerElemnto");
+        //**accede a su clase
+        elemento.className = "azul";
+        elemento.setAttribute("class", "azul");
+        padre.insertBefore(elemento, referenceElement)
+        document.body.appendChild(elemento);
+
+
+    </script>
+</body>
+</html>

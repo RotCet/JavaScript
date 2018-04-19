@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Eventos(Modelo de Eventos Standar)</title>
+</head>
+<body>
+   <!--// <button id="buton">Boton</button>-->
+    <a id="buton" href="http://www.google.com">Liga</a>
+    <input type="text" id="input" />
+    <script>
+        (function () {
+            var saludo = function (e) {
+                alert("Este evento es de tipo" + e.type);
+                e.preventDefault();//previene que envie al href de la página
+            };
+            var saludo1 = function () {
+                alert("saludo1");
+            };
+            var saludoInput = function () {
+                alert("Eres un usuario Black");
+            };
+            var boton = document.getElementById("buton");
+            boton.addEventListener("click", saludo);
+            //boton.addEventListener("click", saludo1);
+
+            var input = document.getElementById("input");
+            //input.addEventListener("focus", saludoInput);
+            ///evento change para cuando hace modficaciones
+            input.addEventListener("change", saludoInput);
+
+            //quitar evento
+            boton.removeEventListener("click", saludo1);
+
+            //Hay muchos eventos que se pueden controlar 
+           // https://www.w3schools.com/jsref/dom_obj_event.asp
+
+        }())
+    </script>
+</body>
+</html>

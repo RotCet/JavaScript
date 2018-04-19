@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Timers, Timeout e Interval</title>
+</head>
+<body>
+    <script>
+        (function () {
+            //Timeout
+            var cont = 0;
+            var saludo = function () {
+                alert("Ese es el recorrido: " + cont);
+                cont++;
+                //parar intervalo
+                if (cont === 3) {                    
+                    clearInterval(interval);
+
+                }
+               /// setTimeout(saludo, 1000)
+            };
+            ///setTimeout(saludo, 1000);
+            //Interval cada determinado tiempo 
+            var interval=setInterval(saludo, 3000);
+        }())
+    </script>
+</body>
+</html>

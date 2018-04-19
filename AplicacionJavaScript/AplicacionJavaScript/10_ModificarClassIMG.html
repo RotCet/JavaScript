@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Modificando Esitilos de los Elementos</title>
+    <style>
+        .thumb {
+            width: 200px;
+            transition: 300ms all ease;
+        }
+
+        .grande {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>   
+    <form action="">
+        <input  type="button" value="Cambio de Tamaño" onclick="zoom();" class="thumb" id="Boton" />
+    </form>
+    <img id="thumb" src="https://info7rm.blob.core.windows.net.optimalcdn.com/images/2018/03/09/perro2.jpg" width="200" alt=""/>
+    <script>
+        var zoom = function () {
+            var thumb = document.getElementById("thumb");
+            var bot = document.getElementById("Boton");
+            if (thumb.className == "thumb") {
+                thumb.setAttribute("class", "thumb grande");
+                bot.setAttribute("class", "thumb grande");
+            } else {
+                thumb.setAttribute("class", "thumb");
+                bot.setAttribute("class", "thumb");
+            }          
+        }
+    </script>
+</body>
+</html>

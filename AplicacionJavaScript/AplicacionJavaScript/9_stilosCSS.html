@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Modificando Esitilos de los Elementos</title>
+    <style>
+        .thumb{
+            width:200px;
+            transition:300ms all ease;
+        }
+        .grande{
+            width:400px;
+        }
+        .titulo{
+            border:1px solid navy;
+            background:#ccc;
+            padding:10px;
+        }
+        .tituloGrande{
+            font-size:60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="encabezado" class="titulo">Soy un encabezado</h1>
+    <script>
+        var encabezado = document.getElementById("encabezado");
+        encabezado.style.color = "navy";
+        ///Quitar alguna clase por otra
+        encabezado.className = encabezado.className.repeat("titulo", "tituloGrande");
+    </script>
+</body>
+</html>
