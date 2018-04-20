@@ -66,6 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\icomoon.eot" />
+    <Content Include="fonts\icomoon.ttf" />
+    <Content Include="fonts\icomoon.woff" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -81,17 +84,26 @@
     <Content Include="13_Timeout.html" />
     <Content Include="14_FechasJavaScript.html" />
     <Content Include="15_Listas.html" />
+    <Content Include="16_VerticalSocialBar.html" />
     <Content Include="4_DOM.html" />
     <Content Include="6_NodosDOM.html" />
     <Content Include="7_ModificandoDom.html" />
     <Content Include="8_AccesoAtributosDom.html" />
     <Content Include="css\estilos.css" />
+    <Content Include="css\SocialBar.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\icomoon.svg" />
     <Content Include="Global.asax" />
     <Content Include="3_metodos-cadenas.html" />
     <Content Include="5_Nodos.html" />
     <Content Include="2_scope.html" />
     <Content Include="1_variables.html" />
     <Content Include="9_stilosCSS.html" />
+    <Content Include="images\email.png" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\google-plus.png" />
+    <Content Include="images\pinterest.png" />
+    <Content Include="images\twitter.png" />
     <Content Include="js\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
